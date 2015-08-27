@@ -1,0 +1,7 @@
+{
+    "connection_string": "##Sublime{|}##",
+    "workdir": "C:/Oracle/scripts",
+    "silent": true,
+    "path": "C:/instantclient_12_1/sqlplus.exe",
+    "auto_set_syntax": "Oracle(SQL-PL-SQLPlus).tmLanguage",
+}

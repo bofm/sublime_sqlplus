@@ -1,0 +1,6 @@
+syntax: glob
+**.orig
+**__pycache__
+todo.TODO
+~$*
+

@@ -1,0 +1,5 @@
+[
+    { "keys": ["ctrl+f8"], "command": "run_in_sqlplus"},
+    { "keys": ["alt+up"], "command": "history_prev"},
+	{ "keys": ["alt+down"], "command": "history_next"},
+]
