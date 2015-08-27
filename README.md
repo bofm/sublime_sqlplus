@@ -1,4 +1,4 @@
-# SQL*Plus plugin for Sublime Text
+# SQL*Plus plugin for Sublime Text 3
 
 Ever been annoyed by Oracle SQL*Plus’s lack of text editing features? Love Sublime Text?
 This plugin is for you.
