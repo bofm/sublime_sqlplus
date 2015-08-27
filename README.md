@@ -3,6 +3,12 @@
 Ever been annoyed by Oracle SQL*Plus’s lack of text editing features? Love Sublime Text?
 This plugin is for you.
 
+# Features
+* Both input and output are selectable and editable with your best text editor
+* Commands history
+* One tab - one SQL*Plus subprocess. Auto-terminate on tab close
+* Do whatever you would do in SQL*Plus with no limitation
+
 # Installation
 * With [Package Control](http://wbond.net/sublime_packages/package_control): Run `Package Control: Install Package` command, find and install `SQLPlus` plugin.
 * Manual: Clone this repo to your Packages folder.
