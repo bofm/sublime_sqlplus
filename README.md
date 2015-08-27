@@ -6,6 +6,7 @@ This plugin is for you.
 # Features
 * Both input and output are selectable and editable with your best text editor
 * Commands history
+* Syntax highlighting for both SQL and PL/SQL included.
 * One tab - one SQL*Plus subprocess. Auto-terminate on tab close
 * Do whatever you would do in SQL*Plus without leaving Sublime Text window.
 
