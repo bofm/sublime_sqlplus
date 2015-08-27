@@ -4,10 +4,11 @@ Ever been annoyed by Oracle SQL*Plus’s lack of text editing features? Love Sub
 This plugin is for you.
 
 # Features
-* Both input and output are selectable and editable with your best text editor
-* Commands history
-* Syntax highlighting for both SQL and PL/SQL included.
-* One tab - one SQL*Plus subprocess. Auto-terminate on tab close
+* Both input and output are selectable and editable.
+* Commands history.
+* Auto-completion of script filenames in workdir.
+* Syntax highlighting for SQL and PL/SQL included.
+* One tab - one SQL*Plus subprocess. Auto-termination on tab close.
 * Do whatever you would do in SQL*Plus without leaving Sublime Text window.
 
 # Installation
