@@ -168,8 +168,7 @@ class Completions(sublime_plugin.EventListener):
                 f = os.path.join(reldir, file)
                 if f.lower().endswith('.sql'):
                     f2, *_ = f.rpartition('.')
-                fullpath = os.path.join(dirpath, file)
-                yield (f, f2)
+                    yield (f, f2)
 
     def get_usage(self, filename):
         if not filename.lower().endswith('.sql'):
