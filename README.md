@@ -4,9 +4,10 @@ Ever been annoyed by Oracle SQL*Plus’s lack of text editing features? Love Sub
 This plugin is for you.
 
 # Installation
-1. Clone this repo to your Packages folder.
-2. Edit `SQLPlus.sublime-settings` and set path to your SQL*Plus executeable and working directory.
-3. *(Optional)* In a new tab in Sublime Text type `prompt Hello World!` and hit `Ctrl+F8`
+* With [Package Control](http://wbond.net/sublime_packages/package_control): Run `Package Control: Install Package` command, find and install `SQLPlus` plugin.
+* Manual: Clone this repo to your Packages folder.
+* Edit `SQLPlus.sublime-settings` and set path to your SQL*Plus executeable and working directory.
+* *(Optional)* In a new tab in Sublime Text type `prompt Hello World!` and hit `Ctrl+F8`
 
 ## How it works?
 This plugin redirects input and output between Sublime Text and SQL*Plus.
