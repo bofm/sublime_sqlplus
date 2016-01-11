@@ -105,7 +105,11 @@ class RunInSqlplusCommand(sublime_plugin.TextCommand):
         syntax = settings.auto_set_syntax
         if syntax:
             if self.view.settings().get('syntax') != syntax:
-                self.view.set_syntax_file(settings.auto_set_syntax)
+                # view.set_syntax_file seems to be deprecated
+                try:
+                    self.view.assign_syntax(settings.auto_set_syntax)
+                except AttributeError:
+                    self.view.set_syntax_file(settings.auto_set_syntax)
         sqlplus = self.sqlplus_instance
         command = self.parse()
         if not sqlplus.is_running:
