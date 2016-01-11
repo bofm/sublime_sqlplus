@@ -25,3 +25,5 @@ This plugin redirects input and output between Sublime Text and SQL*Plus.
 * `Alt+Up` - replace selection with previous command in history
 * `Alt+Down` - replace selection with next command in history
 
+# Problems
+* Tested only on Windows
