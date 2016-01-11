@@ -3,5 +3,5 @@
     "workdir": "C:/Oracle/scripts",
     "silent": true,
     "path": "C:/instantclient_12_1/sqlplus.exe",
-    "auto_set_syntax": "Oracle(SQL-PL-SQLPlus).tmLanguage",
+    "auto_set_syntax": "Packages/sublime_sqlplus/Oracle(SQL-PL-SQLPlus).tmLanguage",
 }
