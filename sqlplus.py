@@ -1,7 +1,10 @@
 import os
+from itertools import islice
+from time import time
+
 import sublime
 import sublime_plugin
-from time import time
+
 from .sttools import *
 from .command_line_wrapper import CommandLineWrapper, History
 
@@ -128,6 +131,7 @@ class RunInSqlplusCommand(sublime_plugin.TextCommand):
 
 class Completions(sublime_plugin.EventListener):
 
+    _COMPLETIONS_LIMIT = 2000
     _BUILD_FREQ = 30.0  # seconds
     _last_build_time = None
     _is_building = False
@@ -140,7 +144,7 @@ class Completions(sublime_plugin.EventListener):
                 time() - self._last_build_time > self._BUILD_FREQ)
         )
 
-    @async
+    @threaded
     def build_completions(self):
         if not self.can_build():
             return
@@ -150,7 +154,8 @@ class Completions(sublime_plugin.EventListener):
         try:
             print('Sqlplus: Building completions...')
             self._is_building = True
-            self._completions = list(self.gen_items(settings.workdir))
+            self._completions = list(islice(
+                self.gen_items(settings.workdir), self._COMPLETIONS_LIMIT))
         finally:
             self._last_build_time = time()
             self._is_building = False
