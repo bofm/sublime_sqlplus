@@ -1,11 +1,7 @@
-import sys
-import os
-import re
-from collections import namedtuple, OrderedDict
 from threading import Thread
 from functools import wraps, partial
-from contextlib import contextmanager
 from concurrent.futures import ThreadPoolExecutor
+
 import sublime
 import sublime_plugin
 
