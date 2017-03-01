@@ -158,6 +158,7 @@ def threaded(fn, start=True):
 
 executor = None
 
+
 def thread_pool(fn):
     @wraps(fn)
     def run(*args, **kwargs):
@@ -171,6 +172,7 @@ def thread_pool(fn):
 
 class classproperty(property):
     """https://docs.python.org/3.3/howto/descriptor.html?highlight=descriptor#properties"""
+
     def __get__(self, obj, cls):
         return self.fget(cls)
 

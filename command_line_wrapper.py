@@ -5,7 +5,6 @@ import os
 import signal
 import threading
 import weakref
-import types
 from functools import wraps
 from collections import namedtuple, deque
 

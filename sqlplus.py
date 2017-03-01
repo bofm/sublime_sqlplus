@@ -13,6 +13,7 @@ history = History()
 
 
 class CommandHistory(sublime_plugin.TextCommand):
+
     def run(self, edit):
         command = self.get_command()
         if command:
@@ -28,6 +29,7 @@ class HistoryNextCommand(CommandHistory):
 
 
 class Cleanup(sublime_plugin.EventListener):
+
     def on_pre_close(self, view):
         sqlplus = sqlplus_instances.pop(view.id(), None)
         if sqlplus is not None:
@@ -132,9 +134,11 @@ class Completions(sublime_plugin.EventListener):
     _completions = []
 
     def can_build(self):
-        return (not self._is_building
-                and (self._last_build_time is None
-                     or time() - self._last_build_time > self._BUILD_FREQ) )
+        return (
+            not self._is_building and
+            (self._last_build_time is None or
+                time() - self._last_build_time > self._BUILD_FREQ)
+        )
 
     @async
     def build_completions(self):
