@@ -17,8 +17,11 @@ This plugin is for you.
 * Edit `SQLPlus.sublime-settings` and set path to your SQL*Plus executeable and working directory.
 * *(Optional)* In a new tab in Sublime Text type `prompt Hello World!` and hit `Ctrl+F8`
 
-## How it works?
+# How it works?
 This plugin redirects input and output between Sublime Text and SQL*Plus.
+
+# Settings
+* `"connection_string": "##Sublime{|}##"` - this is not the database connection string. **DO NOT put your database credentials there**. This string is used in a [hack](sqlplus.py#L76-L88) to print current connection in the ST status bar. To make it work your SQL\*Plus must print the current connection details. With the default setting it should work if you put `prompt ##Sublime{&_USER@&_CONNECT_IDENTIFIER}##` to your [login.sql](http://docs.oracle.com/database/122/SQPUG/configuring-SQL-Plus.htm#SQPUG339).
 
 # Usage
 * `Ctrl+F8` - execute the selected text or current line (if nothing selected) in SQL\*Plus. In case of multiple selections only the first selection is sent to SQL*Plus.
@@ -27,4 +30,3 @@ This plugin redirects input and output between Sublime Text and SQL*Plus.
 
 # Problems
 * Tested only on Windows
-
