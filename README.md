@@ -1,3 +1,7 @@
+# STATUS: UNSUPPORTED
+
+I stopped working with Oracle Database and unfortunately do not have time to support this project.
+
 # SQL*Plus plugin for Sublime Text 3
 
 Ever been annoyed by Oracle SQL*Plus’s lack of text editing features? Love Sublime Text?
